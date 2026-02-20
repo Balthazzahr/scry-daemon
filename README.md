@@ -47,12 +47,30 @@ If your log file isn't found, the script will prompt you to enter the path manua
 
 ## Usage
 
+### 🚀 Running the Tracker
+**Scry-Daemon must be running at the same time as MTG Arena.** It watches your `Player.log` in real-time as the game writes to it.
+
+#### Option A: Manual Launch (Terminal)
+Open a terminal and run:
+```bash
+python3 ~/.local/bin/scry-daemon/scry_daemon.py
+```
+
+#### Option B: Desktop Launcher (Recommended)
+You can create a `.desktop` file to launch Scry-Daemon from your application menu (e.g., **Walker**, GNOME, KRunner, Rofi):
+```bash
+bash ~/.local/bin/scry-daemon/create-launcher.sh
+```
+Now you can simply press your launcher key and search for **"Scry-Daemon"**. It will open in a terminal window to monitor your games.
+
 ### Viewing Statistics
 Your match history is rendered into a beautiful HTML file located at:
 `~/.cache/scry-daemon/stats.html`
 
-### Waybar Integration
-Add this to your Waybar config:
+Simply open this file in any web browser to view your dashboard. It updates automatically after every match.
+
+### 📊 Waybar Integration
+Add this to your Waybar config for real-time match status:
 ```json
 "custom/scry-daemon": {
     "format": "Scry: {}",
