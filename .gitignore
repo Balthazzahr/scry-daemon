@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.env
+venv/
+.vscode/
+.idea/
+*.json
+!config.json
+*.html
+*.png
+!LOGO.png
+!LOGOWHITE.png
+!favicon.png
