@@ -16,7 +16,9 @@ Scry-Daemon is a lightweight, high-performance log parser and match tracker for 
 ## Installation Guide
 
 ### 1. Prerequisites
-Ensure you have Python 3.8 or higher installed on your system.
+- **Python 3.8+**
+- **Mana Font**: Required for the dashboard to display mana symbols correctly.
+  - Download and install from: [https://mana.andrewgioia.com](https://mana.andrewgioia.com)
 
 ### 2. Locate your Player.log
 While the script attempts to find this automatically, knowing its location is helpful. 
